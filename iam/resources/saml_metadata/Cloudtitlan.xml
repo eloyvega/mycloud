@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://accounts.google.com/o/saml2?idpid=C03hggfa9" validUntil="2024-03-20T18:21:43.000Z">
+  <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIDdDCCAlygAwIBAgIGAWmmoyepMA0GCSqGSIb3DQEBCwUAMHsxFDASBgNVBAoTC0dvb2dsZSBJ
+bmMuMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MQ8wDQYDVQQDEwZHb29nbGUxGDAWBgNVBAsTD0dv
+b2dsZSBGb3IgV29yazELMAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWEwHhcNMTkwMzIy
+MTgyMTQzWhcNMjQwMzIwMTgyMTQzWjB7MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEWMBQGA1UEBxMN
+TW91bnRhaW4gVmlldzEPMA0GA1UEAxMGR29vZ2xlMRgwFgYDVQQLEw9Hb29nbGUgRm9yIFdvcmsx
+CzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEA7BWNYEod0HNURS826C4Q40UaNL+v7zQ3iM3xCwESB/r9u840HE0vroTB95qnTL+X
+0KGSmI7gXX1LMEfAE2w3BS09d7psLbeUy9i2qs06hbPJBb9rBgfD/fBJZQX+KZZFUUpDgleEC5U9
+RyIOVpJN+O6/MnuwC7xfR9yLOOkhhXfSh4EEfh6DibhXArNqwsTVukLyNIXdtBP4oTajLmoozkkS
+7yFote88OiUWCD7PqX/mAuVnKGJWHgM1TGQA71nBmeSHNH5ax7JlMWsSEzt9NK8NROBJ4aVSyVaZ
+gFGhZrH4eiyEklSRw6mwsp03qAYsxj4ufghHO/2LB/qa6Y9V0wIDAQABMA0GCSqGSIb3DQEBCwUA
+A4IBAQDjBfJvv7aEOENwTyCkQP/yN21JMz+NFFcvDbgbxRy7DMgCwBPdjv9hcsOvbeC1DsUvIcfH
+dxKaJz21zdjx8RXVtwMLO86IBar8BtLrIg7ISdKxOkhwuxEfEaSdMhuL0hVzGGgJn6KhJRCkP5AJ
+7r7AhS+skh5gCoYv36Ju6mkTvXz3cID2l/o63tkdDiq4wCb+Lxob4vsk+Kl7/shBuARmjXMbuCoY
+NVzDfPuwVG/xwR7AM333LXFhIjbpP7KP/KMPIrgl/CRBUZb7sOLbKAWcPBksgcW+udnsd5qgFx+2
+skQOWJBqVHR6i8pZQy+Ue2XSWzl+lM3LhgY+ZKN+2a8k</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://accounts.google.com/o/saml2/idp?idpid=C03hggfa9"/>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://accounts.google.com/o/saml2/idp?idpid=C03hggfa9"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>
