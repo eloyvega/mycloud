@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 0.11, < 0.12"
+  required_version = ">= 0.12, < 0.13"
 
   backend "s3" {
     bucket = "cloudtitlan-terraform"
@@ -11,3 +11,4 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
+
