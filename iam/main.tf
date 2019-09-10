@@ -1,10 +1,11 @@
 terraform {
   required_version = ">= 0.12, < 0.13"
 
-  backend "s3" {
-    bucket = "cloudtitlan-terraform"
-    key    = "iam/terraform.tfstate"
-    region = "us-east-1"
+  backend "remote" {
+    organization = "eloyvega"
+    workspaces {
+      name = "mycloud"
+    }
   }
 }
 
