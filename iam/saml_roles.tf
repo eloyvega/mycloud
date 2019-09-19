@@ -14,3 +14,11 @@ output "SAMLAdminRole" {
   value = "${module.SAMLAdminRole.arn},${module.Cloudtitlan.arn}"
 }
 
+module "SAMLDemoRole" {
+  source = "./modules/saml_role"
+
+  name              = "SAMLDemoRole"
+  saml_provider_arn = module.Cloudtitlan.arn
+  policies          = [module.SAMLAdminAccess.arn]
+  policies_count    = 1
+}
